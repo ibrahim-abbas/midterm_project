@@ -12,14 +12,16 @@ We used two data sources that comprised of six files from:
 
 ### ETL Process:
 We first cleaned the different files involved including:
- - Transposing the OECD data set.
+ - Deleting excess columns in OECD data set.
+ - Asserting datatypes to match schema creation in Postgres.
  - Filtering out only countries in the Kaggle Berkeley Earth Data set to only include those
  in the OECD data set.
+ - Normalizing Kaggle temperature dataset country names to match those in OECD.
 
 ### Group Members:
-Alecia Gulledge
-Ibrahim Abbas
-Jessica Camacho
-Opeyemi Adeniran
-Russell Akram
+- Alecia Gulledge
+- Ibrahim Abbas
+- Jessica Camacho
+- Opeyemi Adeniran
+- Russell Akram
 
