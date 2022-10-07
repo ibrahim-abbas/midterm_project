@@ -16,7 +16,7 @@ CREATE TABLE Temperature (
     day_ int
 );
 
--- select * from Temperature
+select * from temperature_by_year
 -- where country='Australia' and year_=2000;
 
 create table temperature_by_year as
@@ -121,5 +121,3 @@ select e.country, value_ , yearly_avg_temp,e.year_
 from emissions e
 join temperature_by_year te on e.country = te.country and e.year_ = te.year_
 where e.variable = 'Total  emissions excluding LULUCF' and e.pollutant = 'Greenhouse gases'
-
-
